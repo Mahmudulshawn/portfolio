@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div className=" py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
       {/* stars and the orbits around the hero section */}
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom, transparent, black_10%, balck_70%, transparent)] ">
+      <div className="absolute inset-0 masked-div">
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -63,7 +63,8 @@ const Hero = () => {
               alt="man with a laptop"
             />
             <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg ">
-              <div className="bg-green-500 size-2.5 rounded-full"></div>
+              <div className="bg-green-500 size-3 absolute rounded-full animate-ping "></div>
+              <div className="bg-green-500 size-2.5 rounded-full "></div>
               <div className="text-sm font-medium">Available for new project</div>
             </div>
           </div>
@@ -80,10 +81,9 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">
             <button className="inline-flex items-center gap-2 px-6 h-12 border border-white/15 rounded-xl">
               <span className="font-semibold">Download CV</span>
-              <ArrowDown className="size-4" />
-              {/* <Image src={ArrowDown} className="size-5" alt="arrow down" /> */}
+              <ArrowDown className="size-4 animate-bounce" />
             </button>
-            <button className="bg-white text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
+            <button className="bg-white animate-pulse text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
               <div>👋</div>
               <span className="font-semibold">Lets Connect</span>
             </button>
