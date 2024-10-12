@@ -54,7 +54,7 @@ const Hero = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container w-[100vw] flex justify-center items-center">
+      <div className="container min-w-[100vw] flex justify-center items-center">
         <div className="">
           <div className="flex flex-col items-center ">
             <Image
