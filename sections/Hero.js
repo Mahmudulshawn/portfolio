@@ -69,7 +69,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-8 max-w-lg mx-auto">
-            <div className="text-3xl md:text-5xl font-semibold tracking-wide">
+            <div className="text-3xl md:text-5xl font-serif font-medium tracking-wide">
               Mahmudul Shawn
             </div>
             <p className="text-white/60 mt-4 text-center md:text-lg">
@@ -83,10 +83,12 @@ const Hero = () => {
               <span className="font-semibold">Download CV</span>
               <ArrowDown className="size-4 animate-bounce" />
             </button>
-            <button className="bg-white animate-pulse text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
-              <div>👋</div>
-              <span className="font-semibold">Lets Connect</span>
-            </button>
+            <div className="">
+              <button className="bg-white animate-puls text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
+                <div>👋</div>
+                <span className="font-semibold">Lets Connect</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
