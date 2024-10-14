@@ -84,7 +84,7 @@ const Hero = () => {
               <ArrowDown className="size-4 animate-bounce" />
             </button>
             <div className="">
-              <button className="bg-white animate-puls text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
+              <button className="bg-white animate-pulse text-gray-900 inline-flex items-center gap-2 px-6 h-12 border border-white rounded-xl">
                 <div>👋</div>
                 <span className="font-semibold">Lets Connect</span>
               </button>
