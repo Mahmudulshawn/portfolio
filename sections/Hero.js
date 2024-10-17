@@ -23,13 +23,22 @@ const Hero = () => {
         <div className="size-[1020px] hero-ring"></div>
         <div className="size-[1220px] hero-ring"></div>
         <HeroOrbit size={800} rotation={-72}>
-          <StarIcon className="size-28 text-emerald-300" />
+          <StarIcon className="size-28 text-emerald-300/80" />
+        </HeroOrbit>
+        <HeroOrbit size={610} rotation={-120}>
+          <StarIcon className="size-20 text-emerald-300/70" />
+        </HeroOrbit>
+        <HeroOrbit size={750} rotation={70}>
+          <StarIcon className="size-16 text-emerald-300/70" />
+        </HeroOrbit>
+        <HeroOrbit size={450} rotation={160}>
+          <StarIcon className="size-10 text-emerald-300/50" />
         </HeroOrbit>
         <HeroOrbit size={550} rotation={20}>
-          <StarIcon className="size-12 text-emerald-300" />
+          <StarIcon className="size-12 text-emerald-300/80" />
         </HeroOrbit>
         <HeroOrbit size={590} rotation={98}>
-          <StarIcon className="size-8 text-emerald-300" />
+          <StarIcon className="size-8 text-emerald-300/80" />
         </HeroOrbit>
         <HeroOrbit size={430} rotation={-14}>
           <SparkleIcon className="size-8 text-emerald-300/20" />

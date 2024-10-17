@@ -6,7 +6,7 @@ const SectionHeader = ({
     eyebrow,
 }) => {
   return (
-    <div>
+    <div className="">
       <div className="flex justify-center">
         <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-500 to-sky-300 text-transparent bg-clip-text ">
           {eyebrow}
