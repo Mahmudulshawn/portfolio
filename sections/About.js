@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
+    <div id='about'>
       <SectionHeader 
         eyebrow="About Me"
         title="A Glimpse Into My World"
@@ -12,7 +12,7 @@ const About = () => {
       />
 
       <Card>
-        <div>what</div>
+        <div></div>
       </Card>
     </div>
   )

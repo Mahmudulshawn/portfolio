@@ -17,7 +17,7 @@ const ProjectCard = ({ company, year, title, results, image, link }) => {
 
       <div className="lg:grid lg:grid-cols-2 lg:gap-16">
         <div className="lg:pb-16">
-          <div className="bg-gradient-to-r from-emerald-500 to-sky-300 text-transparent bg-clip-text inline-flex gap-2 font-bold uppercase tracking-widest">
+          <div className="bg-gradient-to-r from-purple-500 to-sky-300 text-transparent bg-clip-text inline-flex gap-2 font-bold uppercase tracking-widest">
             <span>{company}</span>
             <span>&bull;</span>
             <span>{year}</span>

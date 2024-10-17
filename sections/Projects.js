@@ -51,7 +51,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="pb-16 lg:py-24 px-3 lg:max-w-5xl mx-auto">
+    <div id="projects" className="pb-16 lg:py-24 px-3 lg:max-w-5xl mx-auto">
       <SectionHeader
         eyebrow="Real World Results"
         description="See how i transform concepts into engaging digital experiences."
