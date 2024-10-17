@@ -2,11 +2,6 @@ import React from "react";
 import darksaaslandingpage from "@/assets/images/dark-saas-landing-page.png";
 import aistartuplandingpage from "@/assets/images/ai-startup-landing-page.png";
 import lightsaaslandingpage from "@/assets/images/light-saas-landing-page.png";
-import Link from "next/link";
-import Image from "next/image";
-import CheckCircleIcon from "@/assets/icons/check-circle.svg";
-import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import ProjectCard from "@/components/ProjectCard";
 import SectionHeader from "@/components/SectionHeader";
 
