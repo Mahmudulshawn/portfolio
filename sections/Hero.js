@@ -91,7 +91,7 @@ const Hero = () => {
               Mahmudul Shawn
             </div>
             <p className="text-white/60 mt-4 text-center md:text-lg">
-              I am a web-developer from bangladesh. I specialize in transforming
+              I am a software-developer from bangladesh. I specialize in transforming
               designs into functional, high-performing web applications. lets
               discuss our next project.
             </p>
