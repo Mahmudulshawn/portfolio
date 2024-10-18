@@ -1,12 +1,15 @@
 "use client";
 import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import profile from "@/assets/images/profile.jpg";
 import Card from "@/components/Card";
 import BookImage from "@/assets/images/book-cover.png";
+import { motion } from "framer-motion";
 
 const About = () => {
+  const dragRef = useRef();
+
   const Hobbies = [
     {
       title: "Painting",
@@ -80,44 +83,47 @@ const About = () => {
             </div>
           </div>
         </Card>
-        <div>
-          <Card className={`max-w-xs`}>
-            <div className="py-5">
-              <h1 className="text-3xl font-serif font-medium text-center">
-                My Reads
-              </h1>
-              <p className="text-white/50 text-center ">
-                Explore the books shaping my perspectives.
-              </p>
-            </div>
-            <div className="size-44 mx-auto">
-              <Image src={BookImage} alt="book image" />
-            </div>
-          </Card>
-        </div>
-        <div className="">
-          <Card className={`max-w-3xl p-5`}>
-            <div className="pb-5">
-              <h1 className="text-3xl font-serif font-medium text-center">
-                My Hobbies
-              </h1>
-              <p className="text-white/50 text-center ">
-                Explore my interests and hobbies beyond the digital realm.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-4 max-w-3xl min-h-3xl">
-              {Hobbies.map((hobby, index) => (
-                <div
-                  key={index}
-                  className="text-black/80 flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl px-3 py-1.5"
-                >
-                  <p className="font-semibold text-md">{hobby.title}</p>
-                  <span className="text-xl">{hobby.image}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
-        </div>
+
+        <Card className={`max-w-xs h-[320px]`}>
+          <div className="py-5">
+            <h1 className="text-3xl font-serif font-medium text-center">
+              My Reads
+            </h1>
+            <p className="text-white/50 text-center ">
+              Explore the books shaping my perspectives.
+            </p>
+          </div>
+          <div className="w-40 mx-auto">
+            <Image src={BookImage} alt="book image" />
+          </div>
+        </Card>
+
+        <Card className={`max-w-3xl p-5 min-h-[22rem] `}>
+          <div className="pb-6">
+            <h1 className="text-3xl font-serif font-medium text-center">
+              My Hobbies
+            </h1>
+            <p className="text-white/50 text-center ">
+              Explore my interests and hobbies beyond the digital realm.
+            </p>
+          </div>
+          <div
+            ref={dragRef}
+            className="flex flex-wrap gap-5 max-w-3xl min-h-[22rem]"
+          >
+            {Hobbies.map((hobby, index) => (
+              <motion.div
+                drag
+                dragConstraints={dragRef}
+                key={index}
+                className="text-black/80 h-10 flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl px-6 py-1.5"
+              >
+                <p className="font-semibold text-md">{hobby.title}</p>
+                <span className="text-xl">{hobby.image}</span>
+              </motion.div>
+            ))}
+          </div>
+        </Card>
       </div>
     </div>
   );
