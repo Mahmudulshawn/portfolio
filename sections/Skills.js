@@ -38,7 +38,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div id="skills" className="pb-96">
+    <div id="skills" className="pb-60 ">
       <SectionHeader
         eyebrow="Skills"
         title="My Skills"

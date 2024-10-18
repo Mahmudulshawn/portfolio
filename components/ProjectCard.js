@@ -5,9 +5,9 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
-const ProjectCard = ({ company, year, title, results, image, link }) => {
+const ProjectCard = ({ company, year, title, results, image, link, className }) => {
   return (
-    <div className="relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 bg-white/15 outline outline-2 outline-white/20 rounded-xl overflow-hidden ">
+    <div className={`relative px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 bg-[#1E1D1C] outline outline-2 outline-white/10 rounded-xl overflow-hidden ${className}`}>
       <div
         className="absolute inset-0 -z-10 opacity-5"
         style={{

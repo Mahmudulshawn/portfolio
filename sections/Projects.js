@@ -55,7 +55,7 @@ const Projects = () => {
 
       <div className="container mx-auto md:mt-20 mt-10 flex flex-col gap-20 ">
         {projectsData.map((project, index) => (
-          <div key={index}>
+          <div key={index} className={`lg:sticky `} style={{ top: `calc(5rem + (${index} * 40px))` }}>
             <ProjectCard
               company={project.company}
               year={project.year}
