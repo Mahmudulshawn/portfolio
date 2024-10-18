@@ -4,7 +4,7 @@ import grainImage from "../assets/images/grain.jpg";
 const Card = ({ children, className }) => {
   return (
     <div
-      className={`relative bg-white/15 outline outline-2 outline-white/20 rounded-xl overflow-hidden ${className} `}
+      className={`relative bg-white/15 outline outline-2 outline-white/20 rounded-xl overflow-hidden ${className}`}
     >
       <div
         className="absolute inset-0 -z-10 opacity-5"

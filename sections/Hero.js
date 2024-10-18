@@ -17,6 +17,7 @@ const Hero = () => {
       id="home"
       className=" py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
     >
+      <div className="absolute blur-3xl bg-purple-900/30 rounded-full w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
       {/* stars and the orbits around the hero section */}
       <div className="absolute inset-0 masked-div">
         <div
@@ -90,10 +91,10 @@ const Hero = () => {
             <div className="text-3xl md:text-5xl font-serif font-medium tracking-wide">
               Mahmudul Shawn
             </div>
-            <p className="text-white/60 mt-4 text-center md:text-lg">
-              I am a software-developer from bangladesh. I specialize in transforming
-              designs into functional, high-performing web applications. lets
-              discuss our next project.
+            <p className="text-white/60 mt-4 text-center md:text-lg px-2">
+              I am a software-developer from bangladesh. I specialize in
+              transforming designs into functional, high-performing web
+              applications. lets discuss our next project.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8">

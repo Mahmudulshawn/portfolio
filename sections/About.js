@@ -14,34 +14,50 @@ const About = () => {
     {
       title: "Painting",
       image: "🎨",
+      left: "5%",
+      top: "5%",
     },
     {
       title: "Gaming",
       image: "🎮",
+      left: "10%",
+      top: "35%",
     },
     {
       title: "Hiking",
       image: "🥾",
+      left: "35%",
+      top: "40%",
     },
     {
       title: "Music",
       image: "🎵",
+      left: "70%",
+      top: "45%",
     },
     {
       title: "Reading",
       image: "📚",
+      left: "45%",
+      top: "70%",
     },
     {
       title: "Fitness",
       image: "🏋️",
+      left: "5%",
+      top: "65%",
     },
     {
       title: "Photography",
       image: "📷",
+      left: "50%",
+      top: "5%",
     },
     {
       title: "Cooking",
       image: "🫕",
+      left: "50%",
+      top: "25%",
     },
   ];
   return (
@@ -52,10 +68,10 @@ const About = () => {
         description="Learn more about who I am, what I do and what inspires me."
       />
 
-      <div>
-        <Card className={`max-w-5xl mt-20 bg-[#1E1D1C]/20 `}>
-          <div className="intro flex items-center justify-center gap-40 py-16 ">
-            <div className="max-w-lg space-y-3">
+      <div className="mt-20 mx-auto">
+        <Card className={`max-w-4xl bg-[#1E1D1C]/20 h-[320px] mx-auto`}>
+          <div className="intro flex items-center justify-center gap-20 py-8 ">
+            <div className="max-w-md space-y-3">
               <h1 className="text-3xl font-bold">Hello, I&apos;m</h1>
               <h1 className="text-4xl font-medium font-serif ">
                 Mahmudul Alam Shawn
@@ -72,8 +88,8 @@ const About = () => {
               </p>
             </div>
             <div className="relative">
-              <div className="absolute bg-purple-900/50 rounded-full blur-3xl h-[300px] w-[300px] -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "></div>
-              <div className="size-60 rounded-full ">
+              <div className="absolute bg-purple-900/50 rounded-full blur-3xl h-[200px] w-[200px] md:h-[300px] md:w-[300px] -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "></div>
+              <div className="size-40 md:size-60 rounded-full ">
                 <Image
                   src={profile}
                   className="rounded-full"
@@ -98,8 +114,8 @@ const About = () => {
           </div>
         </Card>
 
-        <Card className={`max-w-3xl p-5 min-h-[22rem] `}>
-          <div className="pb-6">
+        <Card className={`max-w-md `}>
+          <div className="py-6 px-6">
             <h1 className="text-3xl font-serif font-medium text-center">
               My Hobbies
             </h1>
@@ -107,18 +123,19 @@ const About = () => {
               Explore my interests and hobbies beyond the digital realm.
             </p>
           </div>
-          <div
-            ref={dragRef}
-            className="flex flex-wrap gap-5 max-w-3xl min-h-[22rem]"
-          >
+          <div ref={dragRef} className="relative flex-1 max-w-3xl h-[320px]">
             {Hobbies.map((hobby, index) => (
               <motion.div
                 drag
                 dragConstraints={dragRef}
                 key={index}
-                className="text-black/80 h-10 flex items-center justify-center gap-4 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl px-6 py-1.5"
+                className=" absolute text-black/80 h-10 inline-flex items-center gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl px-6 py-1.5"
+                style={{
+                  left: hobby.left,
+                  top: hobby.top,
+                }}
               >
-                <p className="font-semibold text-md">{hobby.title}</p>
+                <span className="font-medium text-gray-950">{hobby.title}</span>
                 <span className="text-xl">{hobby.image}</span>
               </motion.div>
             ))}

@@ -38,7 +38,6 @@ export default function RootLayout({ children }) {
           "antialiased font-sans bg-black text-white"
         )}
       >
-        <div className="absolute blur-3xl bg-purple-900/30 rounded-full w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
         {children}
       </body>
     </html>
