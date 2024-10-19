@@ -62,7 +62,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="pb-96 px-3">
+    <div id="about" className="pb-24 px-3">
       <SectionHeader
         eyebrow="About Me"
         title="A Glimpse Into My World"
@@ -70,17 +70,17 @@ const About = () => {
       />
 
       <div className=" max-w-5xl mt-20 mx-auto">
-        <div className=" max-w-5xl mx-auto mb-4">
+        <div className="max-w-5xl mx-auto mb-4">
           <Card className={`bg-[#1E1D1C]/20 px-6`}>
-            <div className="intro flex max-md:flex-col-reverse items-center justify-center gap-14 py-6 ">
-              <div className="max-w-md flex items-center md:items-start flex-col">
+            <div className="intro flex max-md:flex-col-reverse items-center justify-center gap-12 md:28 py-6 ">
+              <div className="max-w-md flex max-md:items-center flex-col">
                 <h1 className="text-3xl font-medium font-serif ">
                   Mahmudul Alam Shawn
                 </h1>
                 <span className="text-white/50 text-sm pb-4">
                   A Passionate Software Developer
                 </span>
-                <p className="text-white/50 tet-xs text-center md:text-start">
+                <p className="text-white/50 text-center md:text-start">
                   I excel in architecting scalable, responsive web applications
                   with a focus on performance, precision, and modern design. My
                   expertise bridges the gap between aesthetic appeal and
@@ -88,8 +88,8 @@ const About = () => {
                   experiences.
                 </p>
               </div>
-              <div className="relative flex justify-center items-start">
-                <div className="absolute bg-purple-900/50 rounded-full blur-3xl h-[150px] w-[150px] md:h-[300px] md:w-[300px] -z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "></div>
+              <div className="relative flex justify-center items-center w-full">
+                <div className="absolute bg-purple-900/50 rounded-full blur-3xl h-[300px] w-[300px] md:h-[300px] md:w-[300px] -z-10 left-50% top-50% -translate-x-50% -translate-y-50% "></div>
                 <div className="rounded-full ">
                   <Image
                     src={profile}
