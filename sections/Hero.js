@@ -17,7 +17,7 @@ const Hero = () => {
       id="home"
       className=" py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
     >
-      <div className="absolute blur-3xl bg-purple-900/30 rounded-full w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
+      <div className="absolute blur-3xl bg-purple-900/30 rounded-full w-[500px] h-[500px] -z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"></div>
       {/* stars and the orbits around the hero section */}
       <div className="absolute inset-0 masked-div">
         <div
