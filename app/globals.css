@@ -92,3 +92,18 @@
   }
 
 }
+
+.grid-about{
+  display: grid;
+  gap:1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about-card:last-child{
+  grid-column: span 2;
+}
+.about-card:first-child{
+  grid-column: span 2;
+}
+
+
