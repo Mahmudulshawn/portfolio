@@ -1,6 +1,8 @@
 import { Inter, Calistoga } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,7 +29,10 @@ export default function RootLayout({ children }) {
           "antialiased font-sans bg-black text-white"
         )}
       >
+        <Header />
+
         {children}
+        <Footer />
       </body>
     </html>
   );

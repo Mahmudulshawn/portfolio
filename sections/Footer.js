@@ -26,11 +26,11 @@ const Footer = () => {
   ];
   return (
     <footer className="relative overflow-x-clip mt-10">
-      <div className="absolute bg-purple-400/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 -z-20"></div>
+      <div className="absolute bg-purple-400/30 [mask-image:radial-gradient(60%_60%_at_bottom_center,black,transparent)] h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 -z-20"></div>
       <div className="px-3">
         <div className="border-t border-white/15 py-6 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8">
           <div>&copy; 2024. All rights reserved.</div>
-          <div className="flex flex-col md:flex-row items-center gap-4">
+          <div className="flex flex-row items-center gap-4">
             {footerIcons.map((icon, index) => (
               <div key={index}>
                 <Link href={icon.link} className="text-3xl">
