@@ -1,5 +1,6 @@
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
@@ -14,6 +15,7 @@ export default function Home() {
       <Skills />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
