@@ -70,7 +70,7 @@ const About = () => {
       />
 
       <div className=" max-w-5xl mt-20 mx-auto">
-        <div className="max-w-5xl mx-auto mb-4">
+        <div className="about-card max-w-5xl mx-auto mb-4">
           <Card className={`bg-[#1E1D1C]/20 px-6`}>
             <div className="intro flex max-md:flex-col-reverse items-center justify-center gap-12 md:28 py-6 ">
               <div className="max-w-md flex max-md:items-center flex-col">
@@ -105,7 +105,7 @@ const About = () => {
         </div>
 
         <div className="grid-about grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="about-card">
+          <div className="book-card">
             <Card className={`max-h-[320px]`}>
               <div className="py-5">
                 <h1 className="text-3xl font-serif font-medium text-center">
@@ -121,15 +121,15 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="about-card map-card">
+          <div className="map-card">
             <Card className={`max-h-[320px]`}>
               <div className="">
-                <Image src={map} alt="map" className="rounded-xl"/>
+                <Image src={map} content="cover" alt="map" className="rounded-xl"/>
               </div>
             </Card>
           </div>
 
-          <div className="about-card md:col-span-2">
+          <div className="hobbies-card md:col-span-2">
             <Card className={``}>
               <div className="py-4 px-6">
                 <h1 className="text-3xl font-serif font-medium text-center">
