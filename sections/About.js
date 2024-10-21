@@ -60,6 +60,42 @@ const About = () => {
       left: "50%",
       top: "25%",
     },
+    {
+      title: "Movies",
+      image: "🎥",
+      left: "75%",
+      top: "25%",
+    },
+    {
+      title: "Travel",
+      image: "🌍",
+      left: "20%",
+      top: "70%",
+    },
+    {
+      title: "Coding",
+      image: "💻",
+      left: "75%",
+      top: "70%",
+    },
+    {
+      title: "Writing",
+      image: "📝",
+      left: "25%",
+      top: "25%",
+    },
+    {
+      title: "Badminton",
+      image: "🏸",
+      left: "25%",
+      top: "50%",
+    },
+    {
+      title: "Football",
+      image: "⚽",
+      left: "50%",
+      top: "54%",
+    },
   ];
   return (
     <div id="about" className="pb-16 px-3">
