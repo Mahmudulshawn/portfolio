@@ -62,7 +62,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="pb-24 px-3">
+    <div id="about" className="pb-16 px-3">
       <SectionHeader
         eyebrow="About Me"
         title="A Glimpse Into My World"
