@@ -26,6 +26,10 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const handleLinkClickMobile = (e, href) => {
+    handleLinkClick(e, href);
+    setIsOpen(false);
+  }
   return (
     <div className="flex justify-center items-center fixed w-full z-10 top-3 px-3">
       {/* Desktop navbar */}
@@ -73,7 +77,7 @@ const Header = () => {
           <div>
             <Link
               href={`#home`}
-              onClick={(e) => handleLinkClick(e, "#home")}
+              onClick={(e) => handleLinkClickMobile(e, "#home")}
               className="bg-white/10 text-gray-900 hover:bg-white/20"
             >
               <Image src={Logo} height={30} width={30} alt="logo" />
@@ -96,28 +100,28 @@ const Header = () => {
           <ul className="flex flex-col gap-4 pb-2">
             <Link
               href={`#projects`}
-              onClick={(e) => handleLinkClick(e, "#projects")}
+              onClick={(e) => handleLinkClickMobile(e, "#projects")}
               className="text-sm font-semibold text-white/70 transition duration-300 py-1.5 "
             >
               Projects
             </Link>
             <Link
               href={`#skills`}
-              onClick={(e) => handleLinkClick(e, "#skills")}
+              onClick={(e) => handleLinkClickMobile(e, "#skills")}
               className="text-sm font-semibold text-white/70 transition duration-300 py-1.5 "
             >
               Skills
             </Link>
             <Link
               href={`#about`}
-              onClick={(e) => handleLinkClick(e, "#about")}
+              onClick={(e) => handleLinkClickMobile(e, "#about")}
               className="text-sm font-semibold text-white/70 transition duration-300 py-1.5 "
             >
               About
             </Link>
             <Link
               href={`#contact`}
-              onClick={(e) => handleLinkClick(e, "#contact")}
+              onClick={(e) => handleLinkClickMobile(e, "#contact")}
               className="text-sm font-semibold text-white/70 transition duration-300 py-1.5 "
             >
               Contact
