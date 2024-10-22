@@ -28,6 +28,7 @@ const Header = () => {
   };
   return (
     <div className="flex justify-center items-center fixed w-full z-10 top-3 px-3">
+      {/* Desktop navbar */}
       <nav className="hidden sm:flex gap-1 p-0.5 bg-black/60 backdrop-blur rounded-full border border-white/15">
         <Link
           href={`#home`}
