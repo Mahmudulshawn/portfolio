@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
@@ -33,9 +32,9 @@ const Footer = () => {
           <div className="flex flex-row items-center gap-4">
             {footerIcons.map((icon, index) => (
               <div key={index}>
-                <Link href={icon.link} className="text-3xl">
+                <a href={icon.link} target="_blank" className="text-3xl">
                   {icon.icon}
-                </Link>
+                </a>
               </div>
             ))}
           </div>
