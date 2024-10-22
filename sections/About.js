@@ -25,12 +25,6 @@ const About = () => {
       top: "35%",
     },
     {
-      title: "Hiking",
-      image: "🥾",
-      left: "35%",
-      top: "40%",
-    },
-    {
       title: "Music",
       image: "🎵",
       left: "70%",
@@ -67,34 +61,16 @@ const About = () => {
       top: "25%",
     },
     {
-      title: "Travel",
-      image: "🌍",
-      left: "20%",
-      top: "70%",
-    },
-    {
-      title: "Coding",
-      image: "💻",
-      left: "75%",
-      top: "70%",
-    },
-    {
       title: "Writing",
       image: "📝",
       left: "25%",
       top: "25%",
     },
     {
-      title: "Badminton",
-      image: "🏸",
-      left: "25%",
-      top: "50%",
-    },
-    {
-      title: "Football",
+      title: "Sports",
       image: "⚽",
-      left: "50%",
-      top: "54%",
+      left: "75%",
+      top: "50%",
     },
   ];
   return (
